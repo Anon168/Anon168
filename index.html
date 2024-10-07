@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Send a Message</title>
+    <title>Roblox Game Copier</title>
+    <style>
+        /* Make the entire page take up the full height of the browser */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;  /* Vertical center */
+            justify-content: center;  /* Horizontal center */
+        }
+        
+        /* Styling for the form container */
+        .form-container {
+            text-align: center;
+        }
+
+        /* Styling for the text area */
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Styling for the submit button */
+        input[type="submit"] {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Send Me a Message</h1>
-    <form action="https://formspree.io/f/xwpkeryy" method="POST">
-        <textarea name="message" placeholder="Enter your message here" rows="10" cols="30"></textarea><br><br>
-        <input type="submit" value="Send Message">
-    </form>
+    <div class="form-container">
+        <h1>Enter Game to Copy</h1>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <textarea name="message" placeholder="Enter game here" rows="5" cols="33"></textarea><br><br>
+            <input type="submit" value="Copy">
+        </form>
+    </div>
 </body>
 </html>
+
